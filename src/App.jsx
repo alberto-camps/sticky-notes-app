@@ -1,8 +1,18 @@
+import { ColorProvider } from "./context/ColorContext";
+import NoteBoard from "./components/NoteBoard";
+import ColorSelector from "./components/ColorSelector";
+
 function App() {
   return (
-    <div className="app-container">
-      <h1>🗒️ Sticky Notes</h1>
-    </div>
+    <>
+      <ColorProvider>
+        <div className="app-container">
+          <h1>🗒️ Sticky Notes</h1>
+          <ColorSelector />
+          <NoteBoard />
+        </div>
+      </ColorProvider>
+    </>
   )
 }
 

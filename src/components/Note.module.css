@@ -1,0 +1,27 @@
+.note {
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.note p {
+    overflow: hidden;
+}
+
+.note button {
+    border-radius: 50%;
+    transition: 0.25s linear all;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 5px solid black;
+}
+
+.note button:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background-color: orange;
+}
